@@ -7,10 +7,9 @@
 
 .container{
     display: grid;
-    grid-template-rows: 4.3em 6.5em 12.3em repeat(2, 4.3em) 3.4em;
+    grid-template-rows: repeat(2, auto) 12.3em repeat(3, auto);
     background-color: #ece4ca;
     margin: 0.5em;
-
 }
 
 .container > *{
@@ -25,7 +24,6 @@
 }
 
 main{
-    display: grid;
     grid-template-rows: 55% 45%;
 }
 
@@ -53,8 +51,16 @@ nav li{
     }
 
     ul{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    li:nth-of-type(2){
+        text-align: center;
+    }
+
+    li:nth-of-type(3){
+        text-align: end;
     }
 
     main{
@@ -64,12 +70,7 @@ nav li{
 
     .sidebar{
         grid-area: 3/1/4/2;
-        display: grid;
         align-items: start;
-    }
-
-    footer{
-        height: 3.3em;
     }
 
     .container .advert{
@@ -92,10 +93,11 @@ nav li{
     }
     
     ul{
-        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: left;
         align-self: start;
     }
-
+    
     main{
         grid-area: 2/2/4/3;
     }
@@ -107,7 +109,6 @@ nav li{
     .container .advert{
         margin-bottom: 1em;
         grid-area: 3/3/4/-1;
-        display: grid;
         align-items: start;
     }
 
