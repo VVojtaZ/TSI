@@ -83,16 +83,21 @@ main h2{
     }
 
     main{
-        flex-basis: 55%;
+        flex-basis: 56%;
         order: -1;
         margin-right: 1em;
     }
 
     .sidebar, .advert{
         margin-bottom: 1em;
+        margin-right: 0;
         display: flex;
         flex-basis: 20%;
         height: 4.7em;
+    }
+
+    .sidebar{
+        flex-grow: 1;
     }
 
     footer{
