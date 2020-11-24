@@ -28,20 +28,6 @@ main h2{
     margin-bottom: 1em;
 }
 
-.container aside{
-    padding: 0;
-    border: 0;
-    background-color:#ece4ca;
-}
-
-.sidebar, .advert{
-    border: 1px solid #ff0000;
-    padding: 1em;
-    background-color: #e9d594;
-    margin-bottom: 1em;
-    border-radius: 1em;
-}
-
 @media (min-width: 640px){
     .container{
         display: flex;
@@ -79,5 +65,37 @@ main h2{
 
     .container footer, .advert{
         margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px){
+    .container > *{
+        color: #ff0000;
+    }
+
+    nav{
+        flex-basis: 20%;
+        margin-right: 1em;
+    }
+
+    ul{
+        flex-direction: column;
+    }
+
+    main{
+        flex-basis: 55%;
+        order: -1;
+        margin-right: 1em;
+    }
+
+    .sidebar, .advert{
+        margin-bottom: 1em;
+        display: flex;
+        flex-basis: 20%;
+        height: 4.7em;
+    }
+
+    footer{
+        flex-basis: 100%;
     }
 }
