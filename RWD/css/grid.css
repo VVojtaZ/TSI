@@ -33,15 +33,14 @@ nav li{
     list-style: none;
 }
 
-footer{
-    height: 3.3em;
+.container footer{
+    margin-bottom: 0;
 }
 
 @media (min-width: 640px){
     .container{
-        display: grid;
         grid-template-columns: 30% 1fr;
-        grid-template-rows: repeat(2, auto) 11.3em 3.3em;
+        grid-template-rows: repeat(2, auto) 11.3em auto;
         column-gap: 1em;
     }
 
@@ -60,7 +59,6 @@ footer{
 
     main{
         grid-area: 3/2/4/-1;
-        display: grid;
         grid-template-rows: 60% 40%;
     }
 
@@ -71,11 +69,50 @@ footer{
     }
 
     footer{
-        grid-area: 4/2/5/-1;
-    }
-
-    .advert{
-        grid-area: 4/1/5/2;
         height: 3.3em;
     }
+
+    .container .advert{
+        margin-bottom: 0em;
+    }
+}
+
+@media (min-width: 1024px){
+    .container{
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: auto 5.4em 5.4em auto;
+    }
+
+    .container > *{
+        color: #ff0000;
+    }
+
+    nav{
+        grid-area: 2/1/4/2;
+    }
+    
+    ul{
+        display: grid;
+        align-self: start;
+    }
+
+    main{
+        grid-area: 2/2/4/3;
+    }
+
+    .sidebar{
+        grid-area: 2/3/3/-1;
+    }
+
+    .container .advert{
+        margin-bottom: 1em;
+        grid-area: 3/3/4/-1;
+        display: grid;
+        align-items: start;
+    }
+
+    footer{
+        grid-area: 5/1/6/-1;
+    }
+
 }
