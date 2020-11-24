@@ -28,6 +28,20 @@ main h2{
     margin-bottom: 1em;
 }
 
+.container aside{
+    padding: 0;
+    border: 0;
+    background-color:#ece4ca;
+}
+
+.sidebar, .advert{
+    border: 1px solid #ff0000;
+    padding: 1em;
+    background-color: #e9d594;
+    margin-bottom: 1em;
+    border-radius: 1em;
+}
+
 @media (min-width: 640px){
     .container{
         display: flex;
