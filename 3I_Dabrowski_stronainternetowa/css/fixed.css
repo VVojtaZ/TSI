@@ -1,0 +1,147 @@
+.top-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-section__imagine {
+  width: 100%;
+  height: 100%;
+}
+
+.top-section__title {
+  position: absolute;
+  font-size: 35px;
+  font-weight: 100;
+  font-family: sans-serif;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+.top-section__subtitle {
+  font-size: 20px;
+}
+
+.second-section {
+  background-color: #EEEEEE;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 15px;
+  color: #707070;
+}
+
+.second-section__title {
+  font-size: 30px;
+  border-bottom: 1px solid #0055FF;
+  margin-bottom: 1em;
+}
+
+.second-section__subtitle {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.2em;
+}
+
+.second-section__text {
+  flex-basis: 100%;
+  align-self: center;
+  text-align: center;
+}
+
+.second-section__imagine {
+  width: 319px;
+  height: 140,69px;
+  border: 1px solid black;
+  border-radius: 2em;
+  margin-top: 1em;
+}
+
+.second-section__motto {
+  flex-basis: 100%;
+  font-size: 18px;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.last-section {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.last-section__calendar {
+  width: 350px;
+  height: 300px;
+  border-radius: 0.5em;
+}
+
+@media (min-width: 640px) {
+  .top-section__title {
+    font-size: 60px;
+  }
+  .top-section__subtitle {
+    font-size: 40px;
+  }
+  .second-section {
+    font-size: 20px;
+  }
+  .second-section__title {
+    font-size: 35px;
+  }
+  .second-section__imagine {
+    width: 319px;
+    height: 140,69px;
+  }
+  .second-section__motto {
+    font-size: 25px;
+    margin-top: 1em;
+  }
+  .last-section__calendar {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    border-radius: 0.5em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-section__title {
+    font-size: 110px;
+  }
+  .top-section__subtitle {
+    font-size: 70px;
+  }
+  .second-section {
+    padding: 3em;
+    font-size: 25px;
+  }
+  .second-section__title {
+    font-size: 45px;
+  }
+  .second-section__text {
+    flex-basis: 50%;
+  }
+  .second-section__imagine {
+    width: 519px;
+    height: 340,69px;
+  }
+  .second-section__motto {
+    font-size: 35px;
+  }
+  .last-section {
+    padding: 3em;
+  }
+  .last-section__calendar {
+    width: 700px;
+  }
+}
+/*# sourceMappingURL=fixed.css.map */

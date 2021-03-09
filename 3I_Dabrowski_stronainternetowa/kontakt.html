@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wojtek Dąbrowski klasa 3I">
+    <link rel="icon" href="/zdjecia/glowna/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <title>A&W - Galeria</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Blok header -->
+        <header class="core-header" id="top">
+            <a href="index.html" class="core-header__logo--link"><img src="zdjecia/logo.png" alt="Logo firmy budowlanej, przedstawiające młotek a na nim napisz A&W" class="core-header__logo--imagine"></a>
+            <h1 class="core-header__title">Firma budowlana <span class="core-header__subtitle">Remonty naszą pasją</span></h1>
+            <nav class="core-header__nav">
+                <!-- Blok menu -->
+                <ul class="core-header__menu core-menu">
+                    <li class="core-menu__item core-menu__item">
+                        <a href="index.html" class="core-menu__link">GŁÓWNA</a>
+                    </li>
+                    <li class="core-menu__item">
+                        <a href="uslugi.html" class="core-menu__link">USŁUGI</a>
+                    </li>
+                    <li class="core-menu__item">
+                        <a href="galeria.html" class="core-menu__link">GALERIA</a>
+                    </li>
+                    <li class="core-menu__item core-menu__item--core">
+                        <a href="kontakt.html" class="core-menu__link">KONTAKT</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Blok login -->
+                <a href="#" class="core-header__login login--reference">
+                    <img src="zdjecia/login.png" class="login__imagine">
+                <p class="login__text">Zaloguj się</p>
+                </a>
+        </header>
+        <!-- Blok info -->
+        <section class="info">
+            <h2 class="info__title">KONTAKT</h2>
+            <article class="info__box">
+                <!-- Blok contact -->
+                <form action="#" method="POST" class="info__formulage contact">
+                    <h2 class="contact__title">Skontakuj się z nami</h2>
+                    <label for="imie" class="contact__etiquette">Imię i nazwisko<input type="text" name="imie" id="imie" class="contact__input" required>
+                    </label>
+                    <label for="mail" class="contact__etiquette">Adres E-mail<input type="email" name="mail" id="mail" class="contact__input" required>
+                    </label>
+                    <label for="temat" class="contact__etiquette">Temat<input type="text" name="temat" id="temat" class="contact__input" required>
+                    </label>
+                    <label for="tresc" class="contact__etiquette">Treść<textarea name="tresc" id="tresc" type="height" class="contact__input" required></textarea>
+                    </label>
+                    <input type="submit" name="wyslij" value="Wyślij" class="contact__send">
+                </form>
+            </article>
+            <!-- Blok article-->
+            <article class="info__box article">
+                <h2 class="article__title">Znajdujemy się tutaj!</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1071.6769081045306!2d18.662859259347133!3d50.29395116126171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471130f9c90fb789%3A0x592517a5c7f5e403!2sJaks.+Przedsi%C4%99biorstwo+handlowo+-+budowlane.+Budownictwo%2C+projektowanie.+Sk%C3%B3rkowski+J.!5e0!3m2!1spl!2spl!4v1446042601700" width="464" height="521" class="article__map">
+                    </iframe>
+            </article>
+        </section>
+        <footer class="footer">
+            <a href="https://www.youtube.com/channel/UCQfXTIXmkiq9tYMV_6BKqbw" class="footer__youtube--link">
+                <img src="zdjecia/youtube.png" alt="Logo YouTube" class="footer__youtube--imagine">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100013640228893" class="footer__facebook--link">
+                <img src="zdjecia/facebook.png" alt="Logo Facebook" class="footer__facebook--imagine">
+            </a>
+            <nav class="footer__nav">
+                <!-- Blok menu-->
+                <ul class="footer__menu menu--footer">
+                    <li class="menu__item">
+                        <a href="index.html" class="menu__link">GŁÓWNA</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="uslugi.html" class="menu__link">USŁUGI</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="galeria.html" class="menu__link">GALERIA</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="kontakt.html" class="menu__link">KONTAKT</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer__clause">&copy; 2020 by A&W - biuro@aiw.pl. All rights reserved. A&W sp. z o. o. Gliwice, śląskie, Polska.</p>
+        </footer>
+    </div>
+    <script src="https://skrypt-cookies.pl/id/470b3ad2824744be.js"></script>
+</body>
+</html>
